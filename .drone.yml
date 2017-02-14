@@ -1,7 +1,5 @@
 pipeline:
-  docker:
-    image: grahamosh/behave:latest
-    volumes:
-      - /behave:/behave
+  build:
+    image: docker
     commands:
-      - behave
+      - docker run -it -v /behave:/behave grahamosh/behave:latest 
