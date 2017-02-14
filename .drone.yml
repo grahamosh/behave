@@ -2,5 +2,4 @@ pipeline:
   build:
     image: grahamosh/behave:latest
     commands:
-      - go get
-      - go build
+      - behave
