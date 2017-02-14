@@ -1,10 +1,7 @@
 pipeline:
   build:
     image: grahamosh/behave:latest
-    volume:
-      - /behave:/behave
     volumes:
-      external:
-        - true
+      - /behave:/behave
     commands:
       - behave
