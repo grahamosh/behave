@@ -1,5 +1,6 @@
 pipeline:
   build:
+    privileged: true
     image: grahamosh/behave:latest
     volumes:
       - /behave:/behave
