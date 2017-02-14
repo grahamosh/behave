@@ -1,6 +1,5 @@
 pipeline:
-  build:
-    privileged: true
+  docker:
     image: grahamosh/behave:latest
     volumes:
       - /behave:/behave
