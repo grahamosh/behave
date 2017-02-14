@@ -1,5 +1,7 @@
 pipeline:
   build:
+    image: docker
     image: grahamosh/behave:latest
+    pull: true
     commands:
       - docker run -it -d -v /behave:/behave grahamosh/behave:latest 
