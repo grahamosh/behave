@@ -3,6 +3,6 @@ pipeline:
     image: grahamosh/behave:latest
     pull: true
     mount:
-      - /behave:/behave
+      - /behave:/drone/src/github.com/grahamosh/behave/features
     commands:
       - behave
