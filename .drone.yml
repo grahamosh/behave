@@ -9,5 +9,6 @@ pipeline:
       - /behave:/behave
     commands:
       - behave
-
-
+      - git add /behave/screenshot.png 
+      - git commit -m output 
+      - git push -u origin master
