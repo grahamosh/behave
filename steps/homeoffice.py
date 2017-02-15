@@ -33,7 +33,7 @@ def step_impl(context):
            context.wd.get("https://www.gov.uk/search?q=home+office/")
            context.wd.find_element_by_xpath("//ol[@id='js-live-search-results']/li/h3/a/mark[2]").click()
 
-           context.wd.get_screenshot_as_file('screenshot.png')
+           context.wd.get_screenshot_as_file('/behave/screenshot.png')
 
            assert context.failed is False
 
