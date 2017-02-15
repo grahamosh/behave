@@ -8,6 +8,6 @@ pipeline:
     mount:
       - /behave:/behave
     commands:
-      - ls
-      - echo "hi gray"
-      - behave 
+      - git add /behave/screenshot.png
+      - git commit -m "screenshot artifact"
+      - git push
