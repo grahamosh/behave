@@ -10,6 +10,7 @@ pipeline:
     commands:
       - behave
 
+pipeline:
     scp:
       image: appleboy/drone-scp
       host: 34.248.85.28
