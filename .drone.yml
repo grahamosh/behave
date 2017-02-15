@@ -8,4 +8,4 @@ pipeline:
     mount:
       - /behave:/behave
     commands:
-      - git push
+      - behave
