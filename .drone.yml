@@ -7,8 +7,6 @@ pipeline:
     image: grahamosh/behave:latest
     mount:
       - /behave:/behave
-    volumes:
-      - /behave:/behave
     commands:
       - behave
 
