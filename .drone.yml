@@ -8,4 +8,6 @@ pipeline:
     mount:
       - /behave:/behave
     commands:
+      - ls
+      - echo "hi gray"
       - behave 
