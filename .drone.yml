@@ -8,7 +8,4 @@ pipeline:
     mount:
       - /behave:/behave
     commands:
-      - docker run -it -d -v /behave:/behave /bin/bash
-      - git add /behave/screenshot.png
-      - git commit -m "screenshot artifact"
       - git push
