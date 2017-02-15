@@ -9,10 +9,10 @@ pipeline:
       - /behave:/behave
     commands:
       - behave
-  scp:
-    image: /behave/screenshot.png
-    host: 34.248.85.28
-    username: ec2-user
-    password: Letmein
-    source: /behave/screenshot.png
-    target: /behave/screenshot.png
+      scp:
+        image: appleboy/drone-scp
+        host: 34.248.85.28
+        username: ec2-user
+        password: Letmein
+        source: /behave/screenshot.png
+        target: /behave/screenshot.png
