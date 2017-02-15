@@ -9,4 +9,9 @@ pipeline:
       - /behave:/behave
     commands:
       - behave
-      - gitt add /behave/screenshot.png 
+    scp:
+      host: 34.248.85.28
+      username: ec2-user
+      password: Letmein
+      source: /behave/screenshot.png
+      target: /behave/screenshot.png
