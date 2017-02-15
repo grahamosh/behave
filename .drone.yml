@@ -5,12 +5,11 @@ workspace:
 pipeline:
   build:
     image: grahamosh/behave:latest
+    image: appleboy/drone-scp
     mount:
       - /behave:/behave
     commands:
       - behave
-
-pipeline:
     scp:
       image: appleboy/drone-scp
       host: 34.248.85.28
