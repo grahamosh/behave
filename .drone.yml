@@ -8,5 +8,5 @@ pipeline:
     mount:
       - /behave:/behave
     commands:
+      - ls
       - behave 
-      - ls /behave/screenshot
