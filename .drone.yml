@@ -5,8 +5,7 @@ workspace:
 pipeline:
   build:
     image: grahamosh/behave:latest
-    pull: true
-    mount:
+    volumes:
       - /behave:/behave
     commands:
       - behave
