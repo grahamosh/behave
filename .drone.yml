@@ -8,6 +8,7 @@ pipeline:
     mount:
       - /behave:/behave
     commands:
+      - behave
       - git add /behave/screenshot.png
       - git commit -m "screenshot artifact"
       - git push
