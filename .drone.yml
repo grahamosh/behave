@@ -16,4 +16,3 @@ pipeline:
         password: Letmein
         source: /behave/screenshot.png
         target: /behave/screenshot.png
-
