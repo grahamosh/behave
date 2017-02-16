@@ -41,4 +41,3 @@ def step_impl(context):
         context.wd.quit()
         if not success:
             raise Exception("Test failed.")
-
