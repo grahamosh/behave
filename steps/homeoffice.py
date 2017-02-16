@@ -14,7 +14,7 @@ success = True
 
 @given('we have driver installed')
 def step_impl(context):
-    context.wd = webdriver.Remote("http://34.248.85.28:4444/wd/hub", webdriver.DesiredCapabilities.FIREFOX.copy())
+    context.wd = webdriver.Remote("http://34.251.76.21:4444/wd/hub", webdriver.DesiredCapabilities.FIREFOX.copy())
     pass
 
 @when('we implement a test')
