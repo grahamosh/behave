@@ -4,10 +4,12 @@ workspace:
 
 pipeline:
   build:
-    image: grahamosh/behave:latest
+    image: python:2.7
     mount:
       - /behave:/behave
     commands:
+      - mkdir /behave
+      - pip install setuptools selenium behave
       - behave
     publish:
       s3:
