@@ -4,10 +4,12 @@ workspace:
 
 pipeline:
   build:
-    image: grahamosh/behave:latest
+    image: joffrey/docker-py
     mount:
       - /behave:/behave
     commands:
+      - mkdir /behave
+      - pip install setuptools selenium behave
       - behave
 
     publish:
