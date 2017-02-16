@@ -13,4 +13,4 @@ pipeline:
       git:
         target: git@github.com:grahamosh/behave.git
         branch: master
-        force: false
+        force: true
