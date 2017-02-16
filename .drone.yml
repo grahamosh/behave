@@ -9,6 +9,7 @@ pipeline:
       - /behave:/behave
     commands:
       - behave
+
     publish:
       s3:
         acl: public-read
