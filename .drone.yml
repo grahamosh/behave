@@ -4,18 +4,9 @@ workspace:
 
 pipeline:
   build:
-    image: joffrey/docker-py
+    image: grahamosh/behave:latest
     mount:
       - /behave:/behave
     commands:
-      - mkdir /behave
-      - pip install setuptools selenium behave
       - behave
 
-    publish:
-      s3:
-        acl: public-read
-        region: eu-west-1
-        bucket: grahamosh-root
-        source: /behave/screenshot.png
-        target: folder1
