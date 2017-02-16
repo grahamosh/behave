@@ -9,7 +9,10 @@ pipeline:
       - /behave:/behave
     commands:
       - behave
-      git:
-        target: git@github.com:grahamosh/behave.git
-        branch: master
-        force: true
+    publish:
+      s3:
+        acl: public-read
+        region: eu-west-1
+        bucket: grahamosh-root
+        source: /behave/screenshot.png
+        target: folder1
