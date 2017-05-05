@@ -3,3 +3,4 @@ pipeline:
     image: centos:latest
     commands:
        - echo "should work now Gray!"
+
