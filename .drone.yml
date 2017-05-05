@@ -1,13 +1,5 @@
-workspace:
-  base: /behave
-  path: /behave
-
 pipeline:
   build:
-    image: grahamosh/behave:latest
-    mount:
-      - /behave:/behave
+    image: centos:latest
     commands:
-      - behave
-
-
+       - echo "should work now Gray!"
